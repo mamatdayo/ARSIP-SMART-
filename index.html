@@ -1,130 +1,43 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>ARSIP SMART</title>
+<header class="header">
+  <div class="header-left">
+    <h1>ARSIP SMART</h1>
+    <p>Sistem Manajemen Arsip Responsif Dan Terintegrasi Lapas Pasuruan</p>
+  </div>
+  <img src="logo.png" class="logo" />
+</header>
+<style>
+  .header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: linear-gradient(135deg, #1e3c72, #2a5298);
+  color: white;
+  padding: 20px;
+  gap: 15px;
+}
 
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+.header-left {
+  max-width: 75%;
+}
 
-  <style>
-    * { box-sizing: border-box; margin: 0; padding: 0; }
+.header-left h1 {
+  font-size: 20px;
+  margin-bottom: 5px;
+}
 
-    body {
-      font-family: 'Poppins', sans-serif;
-      background: #f4f7fb;
-      color: #333;
-    }
+.header-left p {
+  font-size: 12px;
+  opacity: 0.9;
+  line-height: 1.4;
+}
 
-    .app {
-      max-width: 420px;
-      margin: auto;
-      min-height: 100vh;
-      background: white;
-      box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-      display: flex;
-      flex-direction: column;
-      border-radius: 20px;
-      overflow: hidden;
-    }
-
-    header {
-      background: linear-gradient(135deg, #1e3c72, #2a5298);
-      color: white;
-      padding: 20px;
-      position: relative;
-    }
-
-    .logo {
-      position: absolute;
-      top: 15px;
-      right: 15px;
-      width: 50px;
-    }
-
-    h1 {
-      font-size: 22px;
-    }
-
-    h2 {
-      font-size: 13px;
-      font-weight: 300;
-      margin-top: 5px;
-      opacity: 0.9;
-    }
-
-    .content {
-      flex: 1;
-      padding: 25px 20px;
-    }
-
-    .card {
-      background: #ffffff;
-      border-radius: 16px;
-      padding: 20px;
-      margin-bottom: 20px;
-      box-shadow: 0 8px 20px rgba(0,0,0,0.05);
-      transition: 0.3s;
-    }
-
-    .card:hover {
-      transform: translateY(-3px);
-    }
-
-    .card h3 {
-      margin-bottom: 10px;
-      font-size: 16px;
-    }
-
-    .card p {
-      font-size: 13px;
-      color: #666;
-      margin-bottom: 15px;
-    }
-
-    .btn {
-      display: inline-block;
-      width: 100%;
-      text-align: center;
-      padding: 12px;
-      border-radius: 10px;
-      text-decoration: none;
-      font-size: 14px;
-      font-weight: 500;
-      transition: 0.3s;
-    }
-
-    .btn-primary {
-      background: #2a5298;
-      color: white;
-    }
-
-    .btn-primary:hover {
-      background: #1e3c72;
-    }
-
-    .btn-secondary {
-      background: #ff9800;
-      color: white;
-    }
-
-    .btn-secondary:hover {
-      background: #e68900;
-    }
-
-    footer {
-      padding: 15px;
-      text-align: center;
-      font-size: 12px;
-      color: #888;
-      background: #fafafa;
-    }
-
-    @media (min-width: 768px) {
-      .app {
-        margin-top: 30px;
-      }
-    }
+.logo {
+  width: 55px;
+  height: auto;
+}
   </style>
 </head>
 
