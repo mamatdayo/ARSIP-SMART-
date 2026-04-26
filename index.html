@@ -1,43 +1,137 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-<header class="header">
-  <div class="header-left">
-    <h1>ARSIP SMART</h1>
-    <p>Sistem Manajemen Arsip Responsif Dan Terintegrasi Lapas Pasuruan</p>
-  </div>
-  <img src="logo.png" class="logo" />
-</header>
-<style>
-  .header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  background: linear-gradient(135deg, #1e3c72, #2a5298);
-  color: white;
-  padding: 20px;
-  gap: 15px;
-}
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ARSIP SMART</title>
 
-.header-left {
-  max-width: 75%;
-}
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 
-.header-left h1 {
-  font-size: 20px;
-  margin-bottom: 5px;
-}
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
 
-.header-left p {
-  font-size: 12px;
-  opacity: 0.9;
-  line-height: 1.4;
-}
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: #f4f7fb;
+      display: flex;
+      justify-content: center;
+    }
 
-.logo {
-  width: 55px;
-  height: auto;
-}
+    .app {
+      max-width: 420px;
+      width: 100%;
+      min-height: 100vh;
+      background: white;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+      border-radius: 20px;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* HEADER */
+    .header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background: linear-gradient(135deg, #1e3c72, #2a5298);
+      color: white;
+      padding: 20px;
+      gap: 15px;
+      border-bottom-left-radius: 20px;
+      border-bottom-right-radius: 20px;
+    }
+
+    .header-left {
+      max-width: 75%;
+    }
+
+    .header-left h1 {
+      font-size: 20px;
+      margin-bottom: 5px;
+    }
+
+    .header-left p {
+      font-size: 12px;
+      opacity: 0.9;
+      line-height: 1.4;
+    }
+
+    .logo {
+      width: 55px;
+    }
+
+    /* CONTENT */
+    .content {
+      padding: 20px;
+      flex: 1;
+    }
+
+    .card {
+      background: white;
+      border-radius: 16px;
+      padding: 20px;
+      margin-bottom: 20px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-3px);
+    }
+
+    .card h3 {
+      margin-bottom: 10px;
+      font-size: 16px;
+    }
+
+    .card p {
+      font-size: 13px;
+      color: #666;
+      margin-bottom: 15px;
+    }
+
+    .btn {
+      display: block;
+      text-align: center;
+      padding: 12px;
+      border-radius: 10px;
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: 500;
+      transition: 0.3s;
+    }
+
+    .btn-primary {
+      background: #2a5298;
+      color: white;
+    }
+
+    .btn-primary:hover {
+      background: #1e3c72;
+    }
+
+    .btn-secondary {
+      background: #ff9800;
+      color: white;
+    }
+
+    .btn-secondary:hover {
+      background: #e68900;
+    }
+
+    footer {
+      padding: 15px;
+      text-align: center;
+      font-size: 12px;
+      color: #888;
+      background: #fafafa;
+    }
+
   </style>
 </head>
 
@@ -45,28 +139,41 @@
 
   <div class="app">
 
-    <header>
-      <img src="logo.png" class="logo" />
-      <h1>ARSIP SMART</h1>
-      <h2>Sistem Manajemen Arsip Responsif Dan Terintegrasi Lapas Pasuruan</h2>
-    </header>
+    <!-- HEADER -->
+    <div class="header">
+      <div class="header-left">
+        <h1>ARSIP SMART</h1>
+        <p>Sistem Manajemen Arsip Responsif Dan Terintegrasi Lapas Pasuruan</p>
+      </div>
+      <img src="logo.png" class="logo">
+    </div>
 
+    <!-- CONTENT -->
     <div class="content">
 
       <div class="card">
         <h3>Form Registrasi</h3>
         <p>Daftarkan data arsip atau pengguna baru ke dalam sistem.</p>
-        <a href="https://docs.google.com/forms/d/e/1FAIpQLSe46NQtsUSP4GRCTCD_sf9Ib_fD4KcAvyOgj4Vu5nIWfoH39Q/viewform?usp=header" target="_blank" class="btn btn-secondary">Buka Form</a>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSe46NQtsUSP4GRCTCD_sf9Ib_fD4KcAvyOgj4Vu5nIWfoH39Q/viewform?usp=header"
+           target="_blank"
+           class="btn btn-secondary">
+           Buka Form
+        </a>
       </div>
 
       <div class="card">
         <h3>Data Arsip</h3>
         <p>Akses sistem arsip digital terintegrasi dengan mudah dan cepat.</p>
-        <a href="https://e-arsip.ky-trans.my.id/" target="_blank" class="btn btn-primary">Buka Arsip</a>
+        <a href="https://e-arsip.ky-trans.my.id/"
+           target="_blank"
+           class="btn btn-primary">
+           Buka Arsip
+        </a>
       </div>
 
     </div>
 
+    <!-- FOOTER -->
     <footer>
       © 2026 ARSIP SMART • Lapas Pasuruan
     </footer>
